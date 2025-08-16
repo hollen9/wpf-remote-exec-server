@@ -1,7 +1,8 @@
-# wpf-remote-exec-server
+# Hollen's Remote Exec Server
 Lightweight WPF HTTP command server for Windows XP / .NET Framework 4.0.3.
 Remotely execute predefined batch or executable files with password protection,
 custom timeouts, per-command visibility settings, and daily logging.
+![exe Screenshot](https://hollen9.github.io/wpf-remote-exec-server/img/wpf-remoteexec_250817015230.png)
 
 ## ⚠ SECURITY NOTICE
 
@@ -23,9 +24,9 @@ Only recommended for trusted, closed networks and non-sensitive automation
 
 
 ## Example Usage
-
+- Web Browser GET: `http://192.168.1.23:4567/list`
 - Curl
   `curl -X POST -d "pwd=MySecret&cmd=akemihomura" http://192.168.1.23:4567/run`
 - Powershell
-  `Invoke-WebRequest -Uri "http://192.168.1.23:456/run" -Method POST -Body "pwd=MySecret&cmd=avemujica" -ContentType "application/x-www-form-urlencoded"`
+  `Invoke-WebRequest -Uri "http://192.168.1.23:4567/run" -Method POST -Body "pwd=MySecret&cmd=avemujica" -ContentType "application/x-www-form-urlencoded"`
 
